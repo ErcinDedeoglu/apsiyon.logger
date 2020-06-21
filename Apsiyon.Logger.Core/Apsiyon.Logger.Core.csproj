@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Apsiyon.Logger.Data.Entity\Apsiyon.Logger.Data.Entity.csproj" />
+    <ProjectReference Include="..\Apsiyon.Logger.Data.Migration\Apsiyon.Logger.Data.Migration.csproj" />
+    <ProjectReference Include="..\Apsiyon.Logger.Interface\Apsiyon.Logger.Interface.csproj" />
+    <ProjectReference Include="..\Apsiyon.Logger.Service\Apsiyon.Logger.Service.csproj" />
+    <ProjectReference Include="..\ApsiyonLogger.Data.Context\ApsiyonLogger.Data.Context.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\3.1.3\ref\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

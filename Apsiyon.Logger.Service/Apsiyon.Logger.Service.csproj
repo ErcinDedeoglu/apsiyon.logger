@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Apsiyon.Logger.Helper\Apsiyon.Logger.Helper.csproj" />
+    <ProjectReference Include="..\Apsiyon.Logger.Interface\Apsiyon.Logger.Interface.csproj" />
+    <ProjectReference Include="..\ApsiyonLogger.Data.Context\ApsiyonLogger.Data.Context.csproj" />
+  </ItemGroup>
+
+</Project>
