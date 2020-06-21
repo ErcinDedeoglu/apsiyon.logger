@@ -39,7 +39,7 @@ namespace Apsiyon.Logger.Test
                 {
                     CreateDate = log.CreateDate,
                     Message = log.Message,
-                    Object = Logger.Helper.ObjectHelper.ObjectToByteArray(log.Object),
+                    Object = ObjectHelper.ObjectToByteArray(log.Object),
                     ObjectType = log.ObjectType
                 });
 

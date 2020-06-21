@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Linq;
-using System.Reflection;
 using System.Threading;
 using Apsiyon.Logger.Interface;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +14,7 @@ namespace Apsiyon.Logger.UI.Controllers
             _logger = logger;
         }
 
-        public string Index(CancellationToken cancellationToken)
+        public string Index()
         {
             _logger.Add("test", DateTime.Now);
             _logger.Add("test2", Environment.CurrentDirectory);

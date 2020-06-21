@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using Apsiyon.Logger.Data.Entity;
+﻿using System.Threading.Tasks;
 using Apsiyon.Logger.Helper;
 using Apsiyon.Logger.Interface.UnitOfWork;
 using Apsiyon.Logger.Service.UnitOfWork;

@@ -14,7 +14,7 @@ namespace Apsiyon.Logger.Helper
         public bool Capture(string json)
         {
             var result = false;
-            var sentryId = new Sentry.SentryClient(new SentryOptions()
+            var sentryId = new SentryClient(new SentryOptions()
             {
                 Dsn = new Dsn(_dsn)
             }).CaptureMessage(json);

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using Apsiyon.Logger.Helper;
 using NUnit.Framework;
 
 namespace Apsiyon.Logger.Test
@@ -25,7 +24,7 @@ namespace Apsiyon.Logger.Test
 
             var path = Logger.Helper.PathHelper.CreatePath();
                 
-            path = Logger.Helper.FileHelper.CreateLogFile(path, new LogQueueHelper.LogDto()
+            path = Logger.Helper.FileHelper.CreateLogFile(path, new Logger.Helper.LogQueueHelper.LogDto()
             {
                 Object = DateTime.UtcNow,
                 ObjectType = DateTime.UtcNow.GetType().FullName,

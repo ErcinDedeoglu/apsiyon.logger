@@ -28,7 +28,7 @@ namespace Apsiyon.Logger.Core
                     {
                         dataContext.Database.Migrate();
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         Console.WriteLine("Apsiyon.Logger: Cannot reach to database server. Database server logging switching off.");
                         ConfigurationDto.Config.SqlServer.Active = false;
